@@ -32,3 +32,10 @@ let indexes = array.some((v, i) => v - i);
 let scores = [50, 90, 70];
 let total = scores.reduce((accumulator, current) => accumulator + current, 0);
 let average = total / scores.length;
+
+
+// オブジェクトからの配列生成
+let obj = { a: 1, b: 2, c: 3, d: 4 };
+let keys = Object.keys(obj);
+console.log(obj[keys[1]]) // obj.b にアクセス
+keys.map(key => console.log(obj[key])); // 一括アクセス
